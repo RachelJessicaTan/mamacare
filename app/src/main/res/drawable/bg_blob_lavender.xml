@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dikonversi dari aset Figma (b699f.svg) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="266dp"
+    android:height="263dp"
+    android:viewportWidth="266"
+    android:viewportHeight="263">
+    <path
+        android:pathData="M0,131.5a133,131.5 0,1 0,266,0a133,131.5 0,1 0,-266,0z"
+        android:fillColor="#E6DCF7" />
+</vector>

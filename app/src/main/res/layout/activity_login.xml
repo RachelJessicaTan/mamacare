@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallpaper_pink"
+    tools:context=".auth.LoginActivity">
+
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="-162dp"
+        android:layout_marginTop="60dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bg_blob_lavender" />
+
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="263dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-98dp"
+        android:layout_marginEnd="-92dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bg_blob_pink" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="128dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                style="@style/MamaCare.Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/login_title" />
+
+            <TextView
+                style="@style/MamaCare.Text.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_subtitle" />
+
+            <TextView
+                style="@style/MamaCare.Text.FieldLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:labelFor="@id/email_input"
+                android:text="@string/field_email" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_input"
+                    style="@style/Widget.MamaCare.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:hint="@string/login_email_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/MamaCare.Text.FieldLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:labelFor="@id/password_input"
+                android:text="@string/field_password" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconContentDescription="@string/show_password"
+                app:endIconDrawable="@drawable/ic_eye"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_input"
+                    style="@style/Widget.MamaCare.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="password"
+                    android:hint="@string/hint_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgot_password"
+                style="@style/MamaCare.Text.Link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="28dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/login_forgot_password" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/login_action" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/divider_line" />
+
+                <TextView
+                    style="@style/MamaCare.Text.Muted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="@string/login_or" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/divider_line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/google_button"
+                style="@style/Widget.MamaCare.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/login_google" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/register_link"
+                style="@style/MamaCare.Text.Footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/login_to_register" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

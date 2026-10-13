@@ -1,3 +1,81 @@
 <resources>
-    <string name="app_name">mamacare</string>
+    <string name="app_name">MamaCare</string>
+
+    <!-- Common -->
+    <string name="coming_soon">This feature is coming soon.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="field_email">Email</string>
+    <string name="field_password">Password</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="show_password">Show password</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome back, Mama!</string>
+    <string name="login_subtitle">Log in to monitor your little one\'s growth and development every day.</string>
+    <string name="login_email_hint">example@email.com</string>
+    <string name="login_forgot_password">Forgot your password?</string>
+    <string name="login_action">Login</string>
+    <string name="login_or">OR</string>
+    <string name="login_google">Continue with Google</string>
+    <string name="login_to_register">Don’t have an account? <font color="#B73B5F">Sign up</font></string>
+
+    <!-- Register -->
+    <string name="register_title">Start your pregnancy journey</string>
+    <string name="register_subtitle">Make an account for every step of your baby’s growth.</string>
+    <string name="field_full_name">Full name</string>
+    <string name="register_name_hint">your full name</string>
+    <string name="register_email_hint">example@gmail.com</string>
+    <string name="register_terms">I agree to the <font color="#B73B5F">terms &amp; conditions</font> and <font color="#B73B5F">privacy policy</font></string>
+    <string name="register_action">Sign Up</string>
+    <string name="register_google">Sign up with Google</string>
+    <string name="register_to_login">Already have an account? <font color="#B73B5F">Sign in</font></string>
+
+    <!-- Validation -->
+    <string name="error_name_empty">Enter your full name.</string>
+    <string name="error_email_empty">Enter your email.</string>
+    <string name="error_email_invalid">Enter a valid email, like name@email.com.</string>
+    <string name="error_password_empty">Enter your password.</string>
+    <string name="error_password_short">Use at least 8 characters.</string>
+    <string name="error_terms">Agree to the terms &amp; conditions to continue.</string>
+
+    <!-- Main -->
+    <string name="greeting_morning">Good morning, Mama %1$s!</string>
+    <string name="greeting_afternoon">Good afternoon, Mama %1$s!</string>
+    <string name="greeting_evening">Good evening, Mama %1$s!</string>
+    <string name="default_name">Coco</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="week_title">Week %1$d of 40</string>
+    <string name="week_subtitle">%1$s trimester  ·  %2$d weeks to go</string>
+    <string name="trimester_first">First</string>
+    <string name="trimester_second">Second</string>
+    <string name="trimester_third">Third</string>
+
+    <string name="baby_label">YOUR BABY THIS WEEK</string>
+    <string name="baby_title">Sweet as clive</string>
+    <string name="baby_body">Little ears are settling into place, and baby may hear your voice now</string>
+    <string name="baby_length_value">14.2 cm</string>
+    <string name="baby_length">length</string>
+    <string name="baby_weight_value">190 g</string>
+    <string name="baby_weight">weight</string>
+
+    <string name="for_you_today">For You Today</string>
+    <string name="see_all">See All</string>
+    <string name="tip_body_label">BODY CHANGES</string>
+    <string name="tip_body_title">Making room to grow</string>
+    <string name="tip_body_text">Your center of gravity is shifting. Move a little slower today.</string>
+    <string name="tip_daily_label">DAILY TIP</string>
+    <string name="tip_daily_title">A little sunshine</string>
+    <string name="tip_daily_text">Ten gentle minutes outside can support your mood and sleep.</string>
+
+    <string name="how_are_you_feeling">How Are You Feeling?</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_baby">Baby</string>
+    <string name="nav_community">Community</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="logout_title">Log out?</string>
+    <string name="logout_message">You’ll need to log in again to see your pregnancy updates.</string>
+    <string name="logout_action">Log out</string>
 </resources>

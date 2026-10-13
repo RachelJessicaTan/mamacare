@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dikonversi dari aset Figma (1c182.svg) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group android:translateX="1.3867" android:translateY="4">
+        <path
+            android:pathData="M19.8703 9.038C20.3443 8.419 20.3443 7.582 19.8703 6.962C18.3773 5.013 14.7953 1 10.6133 1C6.43134 1 2.84934 5.013 1.35634 6.962C1.12539 7.25873 1 7.62399 1 8C1 8.37601 1.12539 8.74127 1.35634 9.038C2.84934 10.987 6.43134 15 10.6133 15C14.7953 15 18.3773 10.987 19.8703 9.038Z"
+            android:strokeColor="#575757"
+            android:strokeWidth="2"
+            android:strokeAlpha="0.57"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M10.6133 11C12.2702 11 13.6133 9.65685 13.6133 8C13.6133 6.34315 12.2702 5 10.6133 5C8.95648 5 7.61334 6.34315 7.61334 8C7.61334 9.65685 8.95648 11 10.6133 11Z"
+            android:strokeColor="#575757"
+            android:strokeWidth="2"
+            android:strokeAlpha="0.57"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

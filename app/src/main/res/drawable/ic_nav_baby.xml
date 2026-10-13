@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dikonversi dari aset Figma (cd77d.svg) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group android:translateX="1" android:translateY="2">
+        <path
+            android:pathData="M9.00032 14C9.45632 14.607 10.1823 15 11.0003 15C11.8183 15 12.5443 14.607 13.0003 14M14.6253 9.258V9.611M7.37532 9.258V9.611M7.75032 9.5C7.75032 9.224 7.58232 9 7.37532 9C7.16832 9 7.00032 9.224 7.00032 9.5C7.00032 9.776 7.16832 10 7.37532 10C7.58232 10 7.75032 9.776 7.75032 9.5ZM15.0003 9.5C15.0003 9.224 14.8323 9 14.6253 9C14.4183 9 14.2503 9.224 14.2503 9.5C14.2503 9.776 14.4183 10 14.6253 10C14.8323 10 15.0003 9.776 15.0003 9.5Z"
+            android:strokeColor="#9F9F9F"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M1.3226 8.91082C1.53314 8.58657 1.83315 8.33029 2.18632 8.173C2.6071 6.14652 3.71333 4.32692 5.31873 3.02063C6.92412 1.71433 8.93061 1.00114 11.0003 1.00114C13.07 1.00114 15.0765 1.71433 16.6819 3.02063C18.2873 4.32692 19.3935 6.14652 19.8143 8.173C20.1675 8.33029 20.4675 8.58657 20.678 8.91082C20.8886 9.23507 21.0006 9.61339 21.0006 10C21.0006 10.3866 20.8886 10.7649 20.678 11.0892C20.4675 11.4134 20.1675 11.6697 19.8143 11.827C19.3935 13.8535 18.2873 15.6731 16.6819 16.9794C15.0765 18.2857 13.07 18.9989 11.0003 18.9989C8.93061 18.9989 6.92412 18.2857 5.31873 16.9794C3.71333 15.6731 2.6071 13.8535 2.18632 11.827C1.83315 11.6697 1.53314 11.4134 1.3226 11.0892C1.11205 10.7649 1 10.3866 1 10C1 9.61339 1.11205 9.23507 1.3226 8.91082Z"
+            android:strokeColor="#9F9F9F"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M11.0003 1C13.0003 1 14.5003 2.27 14.5003 3.712C14.5003 4.645 14.0283 6 12.5003 6C11.6803 6 11.1583 5.394 11.0003 5"
+            android:strokeColor="#9F9F9F"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

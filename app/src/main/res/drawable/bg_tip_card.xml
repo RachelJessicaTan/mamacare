@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Warna kartu diatur lewat backgroundTint di layout -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <corners android:radius="20dp" />
+</shape>

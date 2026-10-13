@@ -2,4 +2,24 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Token warna dari desain Figma MamaCare -->
+    <color name="wallpaper_pink">#FCF3F6</color>
+    <color name="red_purple">#B73B5F</color>
+    <color name="text_secondary">#575757</color>
+    <color name="text_dark">#221F28</color>
+    <!-- #575757 dengan opasitas 57% -->
+    <color name="placeholder">#91575757</color>
+    <!-- Hitam dengan opasitas 28% -->
+    <color name="stroke">#47000000</color>
+    <color name="checkbox_stroke">#52000000</color>
+    <color name="button_text">#F7FFFFFF</color>
+
+    <color name="pink_soft">#FFB9CD</color>
+    <color name="chip_selected_stroke">#80B73B5F</color>
+    <color name="baby_card">#FFD9E4</color>
+    <color name="baby_text">#736464</color>
+    <color name="tip_green">#D8F6E0</color>
+    <color name="tip_yellow">#FFF4DC</color>
+    <color name="tip_label">#BF575757</color>
 </resources>

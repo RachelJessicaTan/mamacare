@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tipografi (Poppins). letterSpacing -0.03 = tracking -3% di Figma. -->
+    <style name="MamaCare.Text" parent="">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MamaCare.Text.Title">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.Subtitle">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="MamaCare.Text.FieldLabel">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="MamaCare.Text.FieldLabel.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="MamaCare.Text.Link">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/red_purple</item>
+    </style>
+
+    <style name="MamaCare.Text.Muted">
+        <item name="android:textColor">@color/placeholder</item>
+    </style>
+
+    <style name="MamaCare.Text.Footer" parent="MamaCare.Text.Muted">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MamaCare.Text.Date">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/placeholder</item>
+    </style>
+
+    <style name="MamaCare.Text.Greeting">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.Section">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.SemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.SemiBold.Muted">
+        <item name="android:textColor">@color/placeholder</item>
+    </style>
+
+    <style name="MamaCare.Text.Chip" parent="MamaCare.Text.SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MamaCare.Text.BabyLabel">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/baby_text</item>
+    </style>
+
+    <style name="MamaCare.Text.BabyTitle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.BabyBody">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/baby_text</item>
+    </style>
+
+    <style name="MamaCare.Text.StatValue" parent="MamaCare.Text.SemiBold">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MamaCare.Text.StatLabel" parent="MamaCare.Text.SemiBold.Muted">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MamaCare.Text.TipLabel" parent="MamaCare.Text.SemiBold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/tip_label</item>
+    </style>
+
+    <style name="MamaCare.Text.TipTitle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="MamaCare.Text.TipBody" parent="MamaCare.Text.SemiBold.Muted">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Kolom isian: kotak putih, sudut 15dp, label di atas kotak (bukan floating hint) -->
+    <style name="Widget.MamaCare.TextField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/text_field_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="endIconTint">@color/text_secondary</item>
+        <item name="errorTextAppearance">@style/MamaCare.TextAppearance.Error</item>
+    </style>
+
+    <style name="MamaCare.TextAppearance.Error" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Widget.MamaCare.Input" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingStart">19dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+    </style>
+
+    <!-- Tombol: tinggi 62dp, sudut 15dp, bayangan merah-ungu seperti di Figma -->
+    <style name="Widget.MamaCare.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">62dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="backgroundTint">@color/red_purple</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:outlineAmbientShadowColor">@color/red_purple</item>
+        <item name="android:outlineSpotShadowColor">@color/red_purple</item>
+    </style>
+
+    <style name="Widget.MamaCare.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">62dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Item navigasi bawah -->
+    <style name="MamaCare.NavItem" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>

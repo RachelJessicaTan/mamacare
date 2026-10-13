@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dikonversi dari aset Figma (cd7d3.svg) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="33dp"
+    android:height="33dp"
+    android:viewportWidth="33"
+    android:viewportHeight="33">
+    <path
+        android:pathData="M12.375 5.5C12.375 3.97375 13.5988 2.75 15.125 2.75C16.6513 2.75 17.875 3.97375 17.875 5.5C17.875 7.02625 16.6513 8.25 15.125 8.25C13.5988 8.25 12.375 7.02625 12.375 5.5ZM22 17.875C21.9929 16.9944 21.7289 16.135 21.2404 15.4022C20.7519 14.6695 20.0601 14.0953 19.25 13.75C19.25 11.3987 17.2975 9.515 14.905 9.625C12.6775 9.74875 11 11.7425 11 13.97V22C11 22.7562 11.6188 23.375 12.375 23.375H13.75V28.1875C13.75 29.3287 14.6713 30.25 15.8125 30.25C16.9538 30.25 17.875 29.3287 17.875 28.1875V23.375H20.625C21.3813 23.375 22 22.7562 22 22V17.875Z"
+        android:fillColor="#575757"
+        android:fillAlpha="0.85" />
+</vector>
