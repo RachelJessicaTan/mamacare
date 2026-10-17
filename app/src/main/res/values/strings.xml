@@ -37,6 +37,8 @@
     <string name="error_password_empty">Enter your password.</string>
     <string name="error_password_short">Use at least 8 characters.</string>
     <string name="error_terms">Agree to the terms &amp; conditions to continue.</string>
+    <string name="error_server_unreachable">Can’t reach the server. Make sure the backend is running.</string>
+    <string name="loading">Please wait…</string>
 
     <!-- Main -->
     <string name="greeting_morning">Good morning, Mama %1$s!</string>
