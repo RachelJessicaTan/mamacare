@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF3F6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_searchbutton"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="Search"
+        android:textColor="#9F9F9F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/bookmarkButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bookmarkButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="12dp"
+        android:padding="10dp"
+        android:src="@drawable/bookmark"
+        app:layout_constraintBottom_toBottomOf="@id/searchBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchBar"/>
+
+
+    <LinearLayout
+        android:id="@+id/shortcutRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Baby kicks"
+                android:src="@drawable/babykicks" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Baby\nkicks"
+                android:textStyle="bold"
+                android:textColor="#2A2024"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Pregnancy nutrition"
+                android:src="@drawable/nutrition" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Pregnancy\nnutrition"
+                android:textStyle="bold"
+                android:textColor="#2A2024"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Preparing for birth"
+                android:src="@drawable/birth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Preparing\nfor birth"
+                android:textColor="#2A2024"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Pregnancy 101"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shortcutRow"/>
+
+    <HorizontalScrollView
+        android:id="@+id/cardRow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clipToPadding="false"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/firstcard1"
+                android:layout_width="158dp"
+                android:layout_height="196dp"
+                android:background="@drawable/bg_card_pink"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:layout_width="157dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/trimester_card" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/fade_pink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_margin="14dp"
+                    android:text="Your changing body, trimester by trimester"
+                    android:textColor="#2A2024"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/bg_circle"
+                    android:padding="6dp"
+                    android:src="@drawable/bookmark"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/firstcard2"
+                android:layout_marginStart="12dp"
+                android:layout_width="158dp"
+                android:layout_height="196dp"
+                android:background="@drawable/bg_card_pink"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:layout_width="157dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/fruit_card" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/fade_pink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_margin="14dp"
+                    android:text="Baby size guide: a fruit for every week"
+                    android:textColor="#2A2024"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/bg_circle"
+                    android:padding="6dp"
+                    android:src="@drawable/bookmark"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/firstcard3"
+                android:layout_marginStart="12dp"
+                android:layout_width="158dp"
+                android:layout_height="196dp"
+                android:background="@drawable/bg_card_pink"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:layout_width="157dp"
+                    android:layout_height="198dp"
+                    android:layout_gravity="top"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/babyscan_card" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/fade_pink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_margin="14dp"
+                    android:text="What your 20-week scan shows"
+                    android:textColor="#2A2024"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/bg_circle"
+                    android:padding="6dp"
+                    android:src="@drawable/bookmark"/>
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Eating &amp; Wellness"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardRow1" />
+
+        <HorizontalScrollView
+            android:id="@+id/cardRow2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/secondcard1"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_green"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/food_card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/fade_green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="What to eat when you’re nauseous"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/secondcard2"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_green"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/active_card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/fade_green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="Safe ways to stay active"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/secondcard3"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_green"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/dangerfood_card" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="Foods to skip while pregnant"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Labor &amp; Birth"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardRow2"/>
+
+        <HorizontalScrollView
+            android:id="@+id/cardRow3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/thirdcard1"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_purple"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/labor_card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/fade_purple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="Signs that labor is starting"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/thirdcard2"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_purple"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/bag_card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/fade_purple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="Your hospital bag checklist"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/thirdcard3"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="158dp"
+                    android:layout_height="196dp"
+                    android:background="@drawable/bg_card_purple"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/meds_card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/fade_purple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="14dp"
+                        android:text="Explanations of pain relief options"
+                        android:textColor="#2A2024"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        android:src="@drawable/bookmark"/>
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- NAVBAR -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8FA"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <FrameLayout
+            android:id="@+id/nav_home"
+            style="@style/MamaCare.NavItem"
+            android:contentDescription="@string/nav_home">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_nav_home"
+                app:tint="#9F9F9F" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_baby"
+            style="@style/MamaCare.NavItem"
+            android:contentDescription="@string/nav_baby">
+
+            <FrameLayout
+                android:layout_width="75dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_selected">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_nav_baby"
+                    app:tint="#2A2024" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_community"
+            style="@style/MamaCare.NavItem"
+            android:contentDescription="@string/nav_community">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_nav_community" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_profile"
+            style="@style/MamaCare.NavItem"
+            android:contentDescription="@string/nav_profile">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_nav_profile" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
